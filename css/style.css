@@ -1,0 +1,63 @@
+body{
+    background-color:silver;
+}
+
+.container{
+    border-radius:10px;
+    background-color:white;
+    margin:180px auto;
+    width:25vw;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+
+form{
+    height:35vh;
+    border-radius:10px;
+    background-color:gainsboro;
+    margin:50px;
+    padding:50px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+input{
+    font-family:system-ui;
+    background-color:whitesmoke;
+    border:none;
+    margin:10px;
+    padding:10px;
+    width:220px;
+    border-radius:8px;
+}
+
+input:focus{
+    outline:none;
+}
+
+button{
+    font-family:system-ui;
+    background-color:deepskyblue;
+    margin:15px;
+    width:150px;
+    padding:12px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+#file-btn{
+    background:none;
+}
+
+button:hover{
+    cursor:pointer;
+    color:whitesmoke;
+}
+
