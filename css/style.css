@@ -1,12 +1,13 @@
 body{
     background-color:silver;
+    overflow:hidden;
 }
 
 .container{
     border-radius:10px;
     background-color:white;
-    margin:180px auto;
-    width:25vw;
+    margin:10% auto;
+    width:fit-content;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
@@ -15,13 +16,12 @@ body{
 
 
 form{
-    height:35vh;
+    height: fit-content;
     border-radius:10px;
     background-color:gainsboro;
     margin:50px;
     padding:50px;
     display:flex;
-    flex-wrap:wrap;
     flex-direction:column;
     align-items:center;
 }
@@ -60,4 +60,3 @@ button:hover{
     cursor:pointer;
     color:whitesmoke;
 }
-
