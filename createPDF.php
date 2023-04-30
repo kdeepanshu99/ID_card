@@ -5,7 +5,25 @@ require_once __DIR__ . '/composer/vendor/autoload.php';
 if(isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    if(is_numeric($_POST['phone'])){
+      if(strlen($_POST['phone']) == 10) {
+        $phone = $_POST['phone'];
+      }
+      else {
+        echo "<script type='text/javascript'>
+              alert('Please check the number again.');
+              window.location.href='./index.php';
+            </script>";
+      die;
+    }
+    }
+    else {
+      echo "<script type='text/javascript'>
+              alert('Please enter numbers only');
+              window.location.href='./index.php';
+            </script>";
+      die;
+    }
 
 //    FOR IMAGE
     $file_name = $_FILES['img']['name'];
@@ -22,7 +40,11 @@ if(isset($_POST['submit'])) {
       }
     }
     else {
-      echo "Please select the image file only.";
+      echo "<script type='text/javascript'>
+              alert('Please select the image file only.');
+              window.location.href='./index.php';
+            </script>";
+      die;
     }
 
     $mpdf = new \Mpdf\Mpdf();

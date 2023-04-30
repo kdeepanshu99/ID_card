@@ -10,10 +10,10 @@
 <body>
     <div class="container">
         <form action="createPDF.php" method="post" enctype="multipart/form-data">
-            <input type="text" name="name" placeholder="Enter your name">
-            <input type="email" name="email" placeholder="Enter your email">
-            <input type="tel" name="phone" placeholder="Enter your contact">
-            <input type="file" name="img" id="file-btn">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="tel" name="phone" placeholder="Enter your contact" required>
+            <input type="file" name="img" id="file-btn" accept="image/jpg, image/jpeg, image/png" required>
             <button type="submit" name="submit">Generate Card</button>
         </form>
     </div>
